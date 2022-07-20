@@ -1,0 +1,87 @@
+/* ******************************************
+   ------------------Axiforma------------------
+   ****************************************** */
+
+/* Extra Bold */
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../public/fonts/Axiforma/Axiforma-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../public/fonts/Axiforma/Axiforma-ExtraBoldItalic.ttf');
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../public/fonts/Axiforma/Axiforma-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../public/fonts/Axiforma/Axiforma-BoldItalic.ttf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* demi/semibold */
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../public/fonts/Axiforma/Axiforma-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../public/fonts/Axiforma/Axiforma-SemiBoldItalic.ttf');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../public/fonts/Axiforma/Axiforma-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../public/fonts/Axiforma/Axiforma-MediumItalic.ttf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../public/fonts/Axiforma/Axiforma-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../public/fonts/Axiforma/Axiforma-RegularItalic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Light */
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../public/fonts/Axiforma/Axiforma-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../public/fonts/Axiforma/Axiforma-LightItalic.ttf');
+    font-weight: 300;
+    font-style: italic;
+}
