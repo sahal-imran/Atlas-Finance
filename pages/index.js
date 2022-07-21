@@ -3,6 +3,7 @@ import Navbar from "../components/Header/Navbar";
 import Hero from "../components/HeroSection/Hero";
 import Slider from "../components/CardSlider/carousel";
 import StillGotQuestions from "../components/StillGotEffect/StillGotQuestions";
+import Footer from "../components/Footer/Footer";
 
 const theme = createTheme({
   breakpoints: {
@@ -26,6 +27,7 @@ function index() {
       <Hero />
       <Slider />
       <StillGotQuestions />
+      <Footer />
       </ThemeProvider>
     </>
   );

@@ -12,6 +12,8 @@ import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Fade from 'react-reveal/Fade';
+import { Zoom } from 'react-reveal';
 
 function StillGotQuestion() {
     const [expanded, setExpanded] = React.useState(false);
@@ -26,56 +28,60 @@ function StillGotQuestion() {
                 width: '100%', backgroundColor: 'black', py: 0, position: "relative"
             }} >
                 <Container maxWidth="lgBig" sx={{
-                    m: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center',flexDirection:{
-                        md:'row',
-                        xs:'column'
+                    m: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: {
+                        md: 'row',
+                        xs: 'column'
                     }
                 }} >
-                    <Box sx={{ width: {
-                        md:'50%',
-                        xs:'100%'
-                    }, display: 'flex', justifyContent: 'center', alignItems: {
-                        md:'start',
-                        xs:'center'
-                    }, flexDirection: 'column' }} >
-                        <Typography variant='h4' sx={{
-                            fontSize: {
-                                md: '75px',
-                                xs: '28px'
-                            }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
-                                md: '90.98px',
-                                xs: '33.96px'
-                            }, fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
-                                md: 'start',
-                                xs: 'center'
-                            },display:{
-                                md:'block',
-                                xs:'none'
-                            }
-                        }} >
-                            Still got<br />Question ?
-                        </Typography>
-                        <Typography variant='h4' sx={{
-                            fontSize: {
-                                md: '75px',
-                                xs: '28px'
-                            }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
-                                md: '90.98px',
-                                xs: '33.96px'
-                            }, fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
-                                md: 'start',
-                                xs: 'center'
-                            },display:{
-                                md:'none',
-                                xs:'block'
-                            }
-                        }} >
-                            Still got Question ?
-                        </Typography>
+                    <Box sx={{
+                        width: {
+                            md: '50%',
+                            xs: '100%'
+                        }, display: 'flex', justifyContent: 'center', alignItems: {
+                            md: 'start',
+                            xs: 'center'
+                        }, flexDirection: 'column'
+                    }} >
+                        <Zoom cascade >
+                            <Typography variant='h4' sx={{
+                                fontSize: {
+                                    md: '75px',
+                                    xs: '28px'
+                                }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
+                                    md: '90.98px',
+                                    xs: '33.96px'
+                                }, fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
+                                    md: 'start',
+                                    xs: 'center'
+                                }, display: {
+                                    md: 'block',
+                                    xs: 'none'
+                                }
+                            }} >
+                                Still got<br />Question ?
+                            </Typography>
+                            <Typography variant='h4' sx={{
+                                fontSize: {
+                                    md: '75px',
+                                    xs: '28px'
+                                }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
+                                    md: '90.98px',
+                                    xs: '33.96px'
+                                }, fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
+                                    md: 'start',
+                                    xs: 'center'
+                                }, display: {
+                                    md: 'none',
+                                    xs: 'block'
+                                }
+                            }} >
+                                Still got Question ?
+                            </Typography>
+                        </Zoom>
                         <Box sx={{ width: '100%', mt: 8 }} >
                             {
                                 faq.map((item, index) => {
-                                    return <Accordion sx={{ backgroundColor: 'black'}} key={index} expanded={expanded === `panel${index}`} onChange={handleChange(`panel${index}`)}>
+                                    return <Fade bottom > <Accordion sx={{ backgroundColor: 'black' }} key={index} expanded={expanded === `panel${index}`} onChange={handleChange(`panel${index}`)}>
                                         <AccordionSummary
                                             expandIcon={<ExpandMoreIcon sx={{ color: 'white', fontSize: '30px' }} />}
                                             aria-controls="panel1bh-content"
@@ -111,12 +117,14 @@ function StillGotQuestion() {
                                             </Typography>
                                         </AccordionDetails>
                                     </Accordion>
+                                    </Fade>
                                 })
                             }
                         </Box>
+                        <Zoom cascade >
                         <Button variant='outlined' sx={{
                             fontSize: '14px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '16.98px', fontStyle: 'normal', letterSpacing: '2%', fontWeight: 500, color: 'white', boxShadow: 'unset', border: '2px solid #2758FF', "&:hover": {
-                                boxShadow: 'unset', backgroundColor: '#2758FF'
+                                boxShadow: 'unset', backgroundColor: '#2758FF',boxShadow:'0 0 50px #2758FF'
                             }, transition: 'all 0.3s ease', width: {
                                 md: '189px',
                                 xs: '80%'
@@ -127,25 +135,34 @@ function StillGotQuestion() {
                         }} >
                             See more details
                         </Button>
+                        </Zoom>
                     </Box>
-                    <Box sx={{ width: {
-                        md:'50%',
-                        xs:'100%'
-                    },height:{
-                        md:'773.78px',
-                        xs:'500px'
-                    }, position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center',mt:{
-                        md:0,
-                        xs:3
-                    }}} >
+                    <Box sx={{
+                        width: {
+                            md: '50%',
+                            xs: '100%'
+                        }, height: {
+                            md: '773.78px',
+                            xs: '500px'
+                        }, position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', mt: {
+                            md: 0,
+                            xs: 3
+                        }
+                    }} >
+                        <Zoom cascade >
                         <Image src={'/assets/pictures/globes.png'} layout={'fill'} objectFit={'contain'} />
+                        </Zoom>
                     </Box>
                 </Container>
-                <Box sx={{ position: 'absolute', left: '0px', top: '10px',display:{
-                    md:'block',
-                    xs:'none'
-                } }} >
+                <Box sx={{
+                    position: 'absolute', left: '0px', top: '10px', display: {
+                        md: 'block',
+                        xs: 'none'
+                    }
+                }} >
+                    <Fade left cascade >
                     <Image src={'/assets/pictures/Ellipse left.png'} width={700} height={800} objectFit={'cover'} />
+                    </Fade>
                 </Box>
             </Box>
         </>

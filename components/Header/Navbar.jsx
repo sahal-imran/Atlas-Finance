@@ -30,7 +30,7 @@ function Navbar() {
                         <Image src={'/assets/pictures/logo.png'} width={40} height={46} objectFit={'contain'} />
                         <Typography variant='h4' sx={{
                             fontSize: '20px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '28px', fontStyle: 'normal', letterSpacing: '20%', fontWeight: 500, color: 'white', textTransform: 'capitalize', textDecoration: 'none', "&:hover": {
-                                color: '#2758FF'
+                                color: '#2758FF',
                             }, transition: 'all 0.3s ease', ml: 3
                         }} >
                             AtlasFinance
@@ -95,7 +95,7 @@ function Navbar() {
                     }} >
                         <Button variant='outlined' sx={{
                             fontSize: '14px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '16.98px', fontStyle: 'normal', letterSpacing: '2%', fontWeight: 500, color: 'white', textTransform: 'capitalize', boxShadow: 'unset', border: '2px solid #2758FF', "&:hover": {
-                                color: 'white', border: '2px solid #2758FF', backgroundColor: '#2758FF'
+                                color: 'white', border: '2px solid #2758FF', backgroundColor: '#2758FF',boxShadow:'0 0 50px #2758FF'
                             }, transition: 'all 0.3s ease', width: '147px', height: '45px', p: 0, borderRadius: '6px'
                         }} >
                             Lunch app

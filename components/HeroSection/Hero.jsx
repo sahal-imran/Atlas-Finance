@@ -1,13 +1,10 @@
 import React from 'react';
 import { Box } from '@mui/system';
 import Container from '@mui/material/Container';
-import Link from 'next/link';
 import Image from 'next/image';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import { useRouter } from 'next/router';
+import Fade from 'react-reveal/Fade';
+
 
 function Hero() {
     return (
@@ -30,6 +27,7 @@ function Hero() {
                         xs: 8
                     }
                 }} >
+                    <Fade bottom cascade>
                     <Typography variant='h4' sx={{
                         fontSize: {
                             md: '75px',
@@ -46,6 +44,7 @@ function Hero() {
                         revolution for the<br />
                         use of <Box component={'span'} sx={{ color: '#2758FF' }} >DeFi</Box>
                     </Typography>
+                    </Fade>
                     {/* <Box sx={{
                         width: {
                             md: 'unset',
