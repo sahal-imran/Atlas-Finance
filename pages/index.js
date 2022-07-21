@@ -2,6 +2,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Navbar from "../components/Header/Navbar";
 import Hero from "../components/HeroSection/Hero";
 import Slider from "../components/CardSlider/carousel";
+import StillGotQuestions from "../components/StillGotEffect/StillGotQuestions";
 
 const theme = createTheme({
   breakpoints: {
@@ -24,6 +25,7 @@ function index() {
       <Navbar />
       <Hero />
       <Slider />
+      <StillGotQuestions />
       </ThemeProvider>
     </>
   );

@@ -48,8 +48,8 @@ function carousel() {
                     md: 15,
                     xs: 8
                 }, pb: {
-                    md: 40,
-                    xs: 8
+                    md: 48,
+                    xs: 20
                 }, background: 'black', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'
             }} >
                 <Box sx={{
@@ -316,7 +316,7 @@ function carousel() {
                     <Box sx={{
                         flexGrow: 1, width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center',
                     }}>
-                        <Grid container rowSpacing={{md:0,xs:14}} columnSpacing={{md:2,xs:0}}>
+                        <Grid container rowSpacing={{ md: 0, xs: 10 }} columnSpacing={{ md: 2, xs: 0 }}>
                             <Grid item xs={12} md={6}>
                                 <Box sx={{
                                     width: '100%', display: 'flex', justifyContent: 'center', alignItems: {
@@ -560,6 +560,9 @@ function carousel() {
                         </Grid>
                     </Box>
                 </Container>
+                <Box sx={{ position: 'absolute', right: '0px', bottom: '35%' }} >
+                    <Image src={'/assets/pictures/Ellipse.png'} width={800} height={800} objectFit={'cover'} />
+                </Box>
             </Box>
         </>
     )

@@ -20,13 +20,22 @@ function Navbar() {
     return (
         <>
             <Box sx={{ width: '100%', backgroundColor: 'black', }} >
-                <Container maxWidth="lgBig" sx={{ m: 'auto', height:{
-                    md:'140px',
-                    xs:'80px'
-                }, display: 'flex', justifyContent: 'space-between', alignItems: 'center', }} >
+                <Container maxWidth="lgBig" sx={{
+                    m: 'auto', height: {
+                        md: '140px',
+                        xs: '80px'
+                    }, display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                }} >
                     <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} >
                         <Image src={'/assets/pictures/logo.png'} width={40} height={46} objectFit={'contain'} />
-                        <Box sx={{
+                        <Typography variant='h4' sx={{
+                            fontSize: '20px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '28px', fontStyle: 'normal', letterSpacing: '20%', fontWeight: 500, color: 'white', textTransform: 'capitalize', textDecoration: 'none', "&:hover": {
+                                color: '#2758FF'
+                            }, transition: 'all 0.3s ease', ml: 3
+                        }} >
+                            AtlasFinance
+                        </Typography>
+                        {/* <Box sx={{
                             display: {
                                 md: 'flex',
                                 xs: 'none'
@@ -76,7 +85,7 @@ function Navbar() {
                                     </Typography>
                                 </a>
                             </Link>
-                        </Box>
+                        </Box> */}
                     </Box>
                     <Box sx={{
                         display: {

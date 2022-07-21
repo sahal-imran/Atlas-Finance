@@ -46,7 +46,7 @@ function Hero() {
                         revolution for the<br />
                         use of <Box component={'span'} sx={{ color: '#2758FF' }} >DeFi</Box>
                     </Typography>
-                    <Box sx={{
+                    {/* <Box sx={{
                         width: {
                             md: 'unset',
                             xs: '100%'
@@ -83,7 +83,7 @@ function Hero() {
                         }} >
                             learn more
                         </Button>
-                    </Box>
+                    </Box> */}
                     <Box sx={{width:'100vw',height:'500px',position:'relative',overflow:'hidden',display:{
                         md:'none'
                     }}} >
