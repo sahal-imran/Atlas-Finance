@@ -78,63 +78,64 @@ function StillGotQuestion() {
                                 Still got Question ?
                             </Typography>
                         </Zoom>
-                        <Box sx={{ width: '100%', mt: 8 }} >
-                            {
-                                faq.map((item, index) => {
-                                    return <Fade bottom > <Accordion sx={{ backgroundColor: 'black' }} key={index} expanded={expanded === `panel${index}`} onChange={handleChange(`panel${index}`)}>
-                                        <AccordionSummary
-                                            expandIcon={<ExpandMoreIcon sx={{ color: 'white', fontSize: '30px' }} />}
-                                            aria-controls="panel1bh-content"
-                                            id="panel1bh-header"
-                                            sx={{ backgroundColor: 'black', py: 1, borderBottom: '1px solid #2F2F2F' }}
-                                        >
-                                            <Typography variant="h2" sx={{
-                                                fontSize: {
-                                                    md: '20px',
-                                                    xs: '16px'
-                                                }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
-                                                    md: '24.26px',
-                                                    xs: '19px'
-                                                }, fontStyle: 'normal', fontWeight: 400, color: '#FFFFFF', textAlign: {
-                                                    md: 'start',
-                                                    xs: 'center'
-                                                }
-                                            }} component="div">
-                                                {item.question}
-                                            </Typography>
-                                        </AccordionSummary>
-                                        <AccordionDetails sx={{ backgroundColor: 'black' }} >
-                                            <Typography variant="h2" sx={{
-                                                fontSize: {
-                                                    md: '16px',
-                                                    xs: '14px'
-                                                }, lineHeight: {
-                                                    md: '28px',
-                                                    xs: '24px'
-                                                }, fontFamily: ['gilroy', 'Open Sans'], fontWeight: 400, color: '#22A3D8', textAlign: 'start',
-                                            }} component="div">
-                                                {item.answer}
-                                            </Typography>
-                                        </AccordionDetails>
-                                    </Accordion>
-                                    </Fade>
-                                })
-                            }
-                        </Box>
+                        <Fade bottom >
+                            <Box sx={{ width: '100%', mt: 8 }} >
+                                {
+                                    faq.map((item, index) => {
+                                        return <Accordion sx={{ backgroundColor: 'black' }} key={index} expanded={expanded === `panel${index}`} onChange={handleChange(`panel${index}`)}>
+                                            <AccordionSummary
+                                                expandIcon={<ExpandMoreIcon sx={{ color: 'white', fontSize: '30px' }} />}
+                                                aria-controls="panel1bh-content"
+                                                id="panel1bh-header"
+                                                sx={{ backgroundColor: 'black', py: 1, borderBottom: '1px solid #2F2F2F' }}
+                                            >
+                                                <Typography variant="h2" sx={{
+                                                    fontSize: {
+                                                        md: '20px',
+                                                        xs: '16px'
+                                                    }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
+                                                        md: '24.26px',
+                                                        xs: '19px'
+                                                    }, fontStyle: 'normal', fontWeight: 400, color: '#FFFFFF', textAlign: {
+                                                        md: 'start',
+                                                        xs: 'center'
+                                                    }
+                                                }} component="div">
+                                                    {item.question}
+                                                </Typography>
+                                            </AccordionSummary>
+                                            <AccordionDetails sx={{ backgroundColor: 'black' }} >
+                                                <Typography variant="h2" sx={{
+                                                    fontSize: {
+                                                        md: '16px',
+                                                        xs: '14px'
+                                                    }, lineHeight: {
+                                                        md: '28px',
+                                                        xs: '24px'
+                                                    }, fontFamily: ['gilroy', 'Open Sans'], fontWeight: 400, color: '#22A3D8', textAlign: 'start',
+                                                }} component="div">
+                                                    {item.answer}
+                                                </Typography>
+                                            </AccordionDetails>
+                                        </Accordion>
+                                    })
+                                }
+                            </Box>
+                        </Fade>
                         <Zoom cascade >
-                        <Button variant='outlined' sx={{
-                            fontSize: '14px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '16.98px', fontStyle: 'normal', letterSpacing: '2%', fontWeight: 500, color: 'white', boxShadow: 'unset', border: '2px solid #2758FF', "&:hover": {
-                                boxShadow: 'unset', backgroundColor: '#2758FF',boxShadow:'0 0 50px #2758FF'
-                            }, transition: 'all 0.3s ease', width: {
-                                md: '189px',
-                                xs: '80%'
-                            }, height: '45px', p: 0, borderRadius: '60px', textTransform: 'capitalize', mt: {
-                                md: 0,
-                                xs: 2
-                            }, position: 'realtive', zIndex: 3, mt: 8
-                        }} >
-                            See more details
-                        </Button>
+                            <Button variant='outlined' sx={{
+                                fontSize: '14px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '16.98px', fontStyle: 'normal', letterSpacing: '2%', fontWeight: 500, color: 'white', boxShadow: 'unset', border: '2px solid #2758FF', "&:hover": {
+                                    boxShadow: 'unset', backgroundColor: '#2758FF', boxShadow: '0 0 50px #2758FF'
+                                }, transition: 'all 0.3s ease', width: {
+                                    md: '189px',
+                                    xs: '80%'
+                                }, height: '45px', p: 0, borderRadius: '60px', textTransform: 'capitalize', mt: {
+                                    md: 0,
+                                    xs: 2
+                                }, position: 'realtive', zIndex: 3, mt: 8
+                            }} >
+                                See more details
+                            </Button>
                         </Zoom>
                     </Box>
                     <Box sx={{
@@ -150,7 +151,7 @@ function StillGotQuestion() {
                         }
                     }} >
                         <Zoom cascade >
-                        <Image src={'/assets/pictures/globes.png'} layout={'fill'} objectFit={'contain'} />
+                            <Image src={'/assets/pictures/globes.png'} layout={'fill'} objectFit={'contain'} />
                         </Zoom>
                     </Box>
                 </Container>
@@ -161,7 +162,7 @@ function StillGotQuestion() {
                     }
                 }} >
                     <Fade left cascade >
-                    <Image src={'/assets/pictures/Ellipse left.png'} width={700} height={800} objectFit={'cover'} />
+                        <Image src={'/assets/pictures/Ellipse left.png'} width={700} height={800} objectFit={'cover'} />
                     </Fade>
                 </Box>
             </Box>
