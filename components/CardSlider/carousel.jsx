@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Grid from '@mui/material/Grid';
 import Fade from 'react-reveal/Fade';
 import { Zoom } from 'react-reveal';
+import CountUp from 'react-countup';
 
 
 var settings = {
@@ -47,214 +48,17 @@ function carousel() {
         <>
             <Box sx={{
                 width: '100%', overflow: 'hidden', position: 'relative', pt: {
-                    md: 15,
+                    md: 0,
                     xs: 0
                 }, pb: {
                     md: 48,
                     xs: 20
-                }, background: 'black', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'
+                },display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'
             }} >
-                <Box sx={{
-                    flexGrow: 1, width: '80%', m: 'auto', display: {
-                        md: 'flex',
-                        xs: 'none'
-                    }, justifyContent: 'center', alignItems: 'center',
-                }}>
-                    <Grid container spacing={2}>
-                        <Grid item xs={12} md={4}>
-                            <Fade top cascade>
-                                <Box sx={{
-                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px', p: 4, boxShadow: '0px 4px 250px #2758FF', backdropFilter: 'blur(25px)'
-                                }} >
-                                    <Typography variant='h4' sx={{
-                                        fontSize: {
-                                            md: '48px',
-                                            xs: '36px'
-                                        }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
-                                            md: '58.22px',
-                                            xs: '43.67px'
-                                        }, fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mr: 2
-                                    }} >
-                                        $10M
-                                    </Typography>
-                                    <Typography variant='h4' sx={{
-                                        fontSize: '16px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '19.41pxpx', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', letterSpacing: '5%', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mt: 2
-                                    }} >
-                                        Circulating Supply
-                                    </Typography>
-                                </Box>
-                            </Fade>
-                        </Grid>
-                        <Grid item xs={12} md={4}>
-                            <Fade bottom cascade>
-                                <Box sx={{
-                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px', p: 4, boxShadow: '0px 4px 250px #2758FF', backdropFilter: 'blur(25px)'
-                                }} >
-                                    <Typography variant='h4' sx={{
-                                        fontSize: {
-                                            md: '48px',
-                                            xs: '36px'
-                                        }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
-                                            md: '58.22px',
-                                            xs: '43.67px'
-                                        }, fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mr: 2
-                                    }} >
-                                        82K
-                                    </Typography>
-                                    <Typography variant='h4' sx={{
-                                        fontSize: '16px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '19.41pxpx', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', letterSpacing: '5%', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mt: 2
-                                    }} >
-                                        Holders
-                                    </Typography>
-                                </Box>
-                            </Fade>
-                        </Grid>
-                        <Grid item xs={12} md={4}>
-                            <Fade top cascade>
-                                <Box sx={{
-                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px', p: 4, boxShadow: '0px 4px 250px #2758FF', backdropFilter: 'blur(25px)'
-                                }} >
-                                    <Typography variant='h4' sx={{
-                                        fontSize: {
-                                            md: '48px',
-                                            xs: '36px'
-                                        }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
-                                            md: '58.22px',
-                                            xs: '43.67px'
-                                        }, fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mr: 2
-                                    }} >
-                                        $0.00025
-                                    </Typography>
-                                    <Typography variant='h4' sx={{
-                                        fontSize: '16px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '19.41pxpx', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', letterSpacing: '5%', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mt: 2
-                                    }} >
-                                        ATLAS Price
-                                    </Typography>
-                                </Box>
-                            </Fade>
-                        </Grid>
-                    </Grid>
-                </Box>
-                <Box sx={{
-                    width: '90%',
-                    m: 'auto', display: {
-                        md: 'none',
-                        xs: 'flex'
-                    }, justifyContent: 'center', alignItems: 'center',
-                }} >
-                    <Box sx={{
-                        width: "100%", position: 'relative'
-                    }} >
-                        <Slider {...settings}>
-                            <Box sx={{ px: 1 }} >
-                                <Box sx={{
-                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px', border: '2px solid #2758FF', p: 4
-                                }} >
-                                    <Typography variant='h4' sx={{
-                                        fontSize: {
-                                            md: '48px',
-                                            xs: '36px'
-                                        }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
-                                            md: '58.22px',
-                                            xs: '43.67px'
-                                        }, fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mr: 2
-                                    }} >
-                                        $10M
-                                    </Typography>
-                                    <Typography variant='h4' sx={{
-                                        fontSize: '16px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '19.41pxpx', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', letterSpacing: '5%', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mt: 2
-                                    }} >
-                                        Circulating Supply
-                                    </Typography>
-                                </Box>
-                            </Box>
-                            <Box sx={{ px: 1 }} >
-                                <Box sx={{
-                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px', border: '2px solid #2758FF', p: 4
-                                }} >
-                                    <Typography variant='h4' sx={{
-                                        fontSize: {
-                                            md: '48px',
-                                            xs: '36px'
-                                        }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
-                                            md: '58.22px',
-                                            xs: '43.67px'
-                                        }, fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mr: 2
-                                    }} >
-                                        82K
-                                    </Typography>
-                                    <Typography variant='h4' sx={{
-                                        fontSize: '16px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '19.41pxpx', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', letterSpacing: '5%', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mt: 2
-                                    }} >
-                                        Holders
-                                    </Typography>
-                                </Box>
-                            </Box>
-                            <Box sx={{ px: 1 }} >
-                                <Box sx={{
-                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px', border: '2px solid #2758FF', p: 4
-                                }} >
-                                    <Typography variant='h4' sx={{
-                                        fontSize: {
-                                            md: '48px',
-                                            xs: '36px'
-                                        }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
-                                            md: '58.22px',
-                                            xs: '43.67px'
-                                        }, fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mr: 2
-                                    }} >
-                                        $0.00025
-                                    </Typography>
-                                    <Typography variant='h4' sx={{
-                                        fontSize: '16px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '19.41pxpx', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', letterSpacing: '5%', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mt: 2
-                                    }} >
-                                        ATLAS Price
-                                    </Typography>
-                                </Box>
-                            </Box>
-                        </Slider>
-                    </Box>
-                </Box>
                 <Box sx={{
                     width: {
                         md: '70%',
-                        xs: '100%'
+                        xs: '90%'
                     }, display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', mt: 14
                 }} >
                     <Zoom cascade >
@@ -267,8 +71,8 @@ function carousel() {
                                 xs: '33.96px'
                             }, fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: 'center'
                         }} >
-                            A simple<br />
-                            buy-hold-earn System
+                            A new way to<br /> Grow your Portfolio 
+
                         </Typography>
                         <Typography variant='h4' sx={{
                             fontSize: {
@@ -279,7 +83,7 @@ function carousel() {
                                 xs: '28px'
                             }, fontStyle: 'normal', fontWeight: 400, color: '#6C7EBA', textAlign: 'center', mt: 3
                         }} >
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            ATLAS is a hybrid GameFi & DeFi cross protocol - A simple to Buy-Hold-Earn and Contribute to the ATLAS ecosystem to earn rewards, safe & secure all within your wallet.
                         </Typography>
                         <Typography variant='h4' sx={{
                             fontSize: {
@@ -290,7 +94,7 @@ function carousel() {
                                 xs: '58.22px'
                             }, fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: 'center', mt: 3
                         }} >
-                            102483.58%
+                            <CountUp end={102483.58} decimals={2} />%
                         </Typography>
                         <Typography variant='h4' sx={{
                             fontSize: {
@@ -357,7 +161,8 @@ function carousel() {
                                                 xs: '58.22px'
                                             }, fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: 'center', mt: 1
                                         }} >
-                                            $100,000
+                                            $100,000+
+
                                         </Typography>
                                         <Typography variant='h4' sx={{
                                             fontSize: {
@@ -393,7 +198,7 @@ function carousel() {
                                         }} >
                                             Early project funding & backing, holders gain a percentage stake within investments.
                                         </Typography>
-                                        <Box sx={{
+                                        {/* <Box sx={{
                                             width: {
                                                 md: 'unset',
                                                 xs: '100%'
@@ -431,7 +236,7 @@ function carousel() {
                                             }} >
                                                 Try your luck!
                                             </Typography>
-                                        </Box>
+                                        </Box> */}
                                         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', mt: 8 }} >
                                             <Box sx={{ borderRadius: '36px', overflow: 'hidden', boxShadow: '0px 4px 250px #2758FF', backdropFilter: 'blur(25px)' }} >
                                                 <Image src={'/assets/pictures/lunchpad-blue.png'} width={535} height={710} objectFit={'cover'} />
@@ -515,7 +320,7 @@ function carousel() {
                                         }} >
                                             Integrated with launchpad projects & high potential tokens. $ATLAS holders get preferential rates.
                                         </Typography>
-                                        <Box sx={{
+                                        {/* <Box sx={{
                                             width: {
                                                 md: 'unset',
                                                 xs: '100%'
@@ -553,7 +358,7 @@ function carousel() {
                                             }} >
                                                 Win by saving
                                             </Typography>
-                                        </Box>
+                                        </Box> */}
                                         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', mt: 8 }} >
                                             <Box sx={{ borderRadius: '36px', overflow: 'hidden', boxShadow: '0px 4px 250px  #56DBBE', backdropFilter: 'blur(12px)' }} >
                                                 <Image src={'/assets/pictures/lunchpad-green.png'} width={535} height={710} objectFit={'cover'} />

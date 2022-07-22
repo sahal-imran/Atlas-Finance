@@ -34,23 +34,30 @@ function Footer() {
                         <Grid container spacing={1}>
                             <Grid item xs={12} md={4}>
                                 <Box sx={{
+                                    width: '100%', display: 'flex', justifyContent: {
+                                        md:'start ',
+                                        xs:'center'
+                                    }, alignItems: 'center'
+                                }} >
+                                    <Image src={'/assets/pictures/logo2.png'} width={180} height={100} objectFit={'contain'} />
+                                </Box>
+                            </Grid>
+                            <Grid item xs={12} md={4}>
+                                <Box sx={{
                                     display: 'flex', justifyContent: 'center', alignItems: {
                                         md: 'start',
                                         xs: 'center'
-                                    }, flexDirection: 'column'
+                                    }, flexDirection: 'column',width: '80%',m:'auto',mt: {
+                                        md: 0,
+                                        xs: 4
+                                    }
                                 }} >
                                     <Typography variant='h4' sx={{
-                                        fontSize: {
-                                            md: '20px',
-                                            xs: '16px'
-                                        }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
-                                            md: '24.26px',
-                                            xs: '28px'
-                                        }, fontStyle: 'normal', fontWeight: 400, color: 'white', textAlign: 'center', letterSpacing: '5%'
+                                        fontSize: '14px', lineHeight: '16.98px', fontStyle: 'normal', fontWeight: 400, color: 'white', textAlign: 'center', letterSpacing: '5%'
                                     }} >
                                         Get on the List
                                     </Typography>
-                                    <Box sx={{ width: '80%', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '36px', mt: 2 }} >
+                                    <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '36px', mt: 2 }} >
                                         <Box sx={{ width: '80%', height: '100%' }} >
                                             <input type="text" style={{
                                                 outline: 'none', border: '1px solid #2758FF', fontSize: '16px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '24px', fontStyle: 'normal', color: 'white', background: 'transparent', width: '100%', height: '100%', padding: '0px 20px'
@@ -60,21 +67,16 @@ function Footer() {
                                             <ArrowRightAltIcon sx={{ color: 'white' }} />
                                         </Box>
                                     </Box>
+                                    <Typography variant='h4' sx={{
+                                        fontSize: '14px', lineHeight: '16.98px', fontFamily: ['gilroy', 'Open Sans'], fontStyle: 'normal', fontWeight: 400, color: 'white', textAlign: 'center', letterSpacing: '5%', mt: 2
+                                    }} >
+                                        © 2022 ATLAS Protocol, All rights reserved.
+                                    </Typography>
                                 </Box>
                             </Grid>
                             <Grid item xs={12} md={4}>
                                 <Box sx={{
-                                    width: '100%', display: 'flex', justifyContent: 'center ', alignItems: 'center', mt: {
-                                        md: 0,
-                                        xs: 4
-                                    }
-                                }} >
-                                    <Image src={'/assets/pictures/logo2.png'} width={260} height={100} objectFit={'contain'} />
-                                </Box>
-                            </Grid>
-                            <Grid item xs={12} md={4}>
-                                <Box sx={{
-                                    width: '100%', display: 'flex', justifyContent: 'center', alignItems: {
+                                    width: '100%',height:'100%', display: 'flex', justifyContent: 'center', alignItems: {
                                         md: 'end',
                                         xs: 'center'
                                     }, flexDirection: 'column', mt: {
@@ -96,26 +98,9 @@ function Footer() {
                                             <Image src={'/assets/pictures/telegram.svg'} width={24} height={24} objectFit={'contain'} />
                                         </a>
                                     </Box>
-                                    <Typography variant='h4' sx={{
-                                        fontSize: {
-                                            md: '16px',
-                                            xs: '14px'
-                                        }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
-                                            md: '24.26px',
-                                            xs: '20px'
-                                        }, fontStyle: 'normal', fontWeight: 400, color: 'white', textAlign: 'center', letterSpacing: '5%', mt: 2
-                                    }} >
-                                        © 2022 ATLAS Protocol, All rights reserved.
-                                    </Typography>
                                     <a href="">
                                         <Typography variant='h4' sx={{
-                                            fontSize: {
-                                                md: '16px',
-                                                xs: '14px'
-                                            }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
-                                                md: '24.26px',
-                                                xs: '20px'
-                                            }, fontStyle: 'normal', fontWeight: 400, color: 'white', textAlign: 'center', letterSpacing: '5%', mt: 2
+                                            fontSize: '14px', lineHeight: '16.98px', fontStyle: 'normal', fontWeight: 400, color: 'white', textAlign: 'center', letterSpacing: '5%', mt: 2
                                         }} >
                                             Disclaimer  •  Terms of use
                                         </Typography>

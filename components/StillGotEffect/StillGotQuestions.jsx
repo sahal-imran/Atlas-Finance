@@ -96,10 +96,7 @@ function StillGotQuestion() {
                                                     }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
                                                         md: '24.26px',
                                                         xs: '19px'
-                                                    }, fontStyle: 'normal', fontWeight: 400, color: '#FFFFFF', textAlign: {
-                                                        md: 'start',
-                                                        xs: 'center'
-                                                    }
+                                                    }, fontStyle: 'normal', fontWeight: 400, color: '#FFFFFF', textAlign: 'start'
                                                 }} component="div">
                                                     {item.question}
                                                 </Typography>
@@ -128,7 +125,7 @@ function StillGotQuestion() {
                                     boxShadow: 'unset', backgroundColor: '#2758FF', boxShadow: '0 0 50px #2758FF'
                                 }, transition: 'all 0.3s ease', width: {
                                     md: '189px',
-                                    xs: '80%'
+                                    xs: '200px'
                                 }, height: '45px', p: 0, borderRadius: '60px', textTransform: 'capitalize', mt: {
                                     md: 0,
                                     xs: 2
@@ -175,22 +172,27 @@ export default StillGotQuestion;
 const faq = [
     {
         id: 1,
-        question: 'What is ATLAS ?',
-        answer: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.'
+        question: 'What does ATLAS stand for?',
+        answer: 'In Greek mythology Atlas is a titan responsible for holding up the heavens and skies, our belief is to build a truly self-sustaining ecosystem powered by $ATLAS.'
     },
     {
         id: 2,
-        question: 'How yo buy ?',
-        answer: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.'
+        question: 'Why Gaming with Finance?',
+        answer: 'By combining the two you are rewarded with not only staking returns. Progression is enhanced with unlockable content gaining experience points, levelling while staking and unlocking items to boost overall ROI, be rewarded for any and all interactions and contributions.'
     },
     {
         id: 3,
-        question: 'Is it a marketplace ?',
-        answer: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.'
+        question: 'Who is the Atlas team?',
+        answer: 'Comprised of a wide array of developers and talent from traditional finance.'
     },
     {
         id: 4,
-        question: 'How can i post project ?',
-        answer: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.'
+        question: 'Is Atlas a SAFUU/Titano Fork?',
+        answer: 'We took the best crpyto-innovations on the market and improved areas where we believe needed, the enhanced protocol allows for broader set of innovations and safeguards against malicious hackers and decreases fees for holders in order to boost long term sustainability.'
+    },
+    {
+        id: 5,
+        question: 'How can you sustain such a large APY interest?',
+        answer: 'ATLAS is built upon industry leading Auto-compounding protocols where the growth and sustainability of the ecosystem is hard-coded in its functionality, fees are taken and recycled into the hands of holders rather than given to Centralized exchanges. Our improved protocol has been models against industry competitors and the fixed APY has been proven to be upheld overtime with an increase linear deflationary reduction in tokens and a more flexible APY progression in rebasing.'
     }
 ]

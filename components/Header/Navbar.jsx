@@ -29,11 +29,11 @@ function Navbar() {
                     <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} >
                         <Image src={'/assets/pictures/logo.png'} width={40} height={46} objectFit={'contain'} />
                         <Typography variant='h4' sx={{
-                            fontSize: '20px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '28px', fontStyle: 'normal', letterSpacing: '20%', fontWeight: 500, color: 'white', textTransform: 'capitalize', textDecoration: 'none', "&:hover": {
+                            fontSize: '20px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '28px', fontStyle: 'normal', letterSpacing: '20%', fontWeight: 700, color: 'white', textTransform: 'uppercase', textDecoration: 'none', "&:hover": {
                                 color: '#2758FF',
                             }, transition: 'all 0.3s ease', ml: 3
                         }} >
-                            AtlasFinance
+                            Atlas<Box component={'span'} sx={{fontWeight:500}} >Finance</Box>
                         </Typography>
                         {/* <Box sx={{
                             display: {
@@ -98,7 +98,7 @@ function Navbar() {
                                 color: 'white', border: '2px solid #2758FF', backgroundColor: '#2758FF',boxShadow:'0 0 50px #2758FF'
                             }, transition: 'all 0.3s ease', width: '147px', height: '45px', p: 0, borderRadius: '6px'
                         }} >
-                            Lunch app
+                            Launch app
                         </Button>
                     </Box>
                     {isOpen ? < CloseIcon onClick={toggleDrawer} sx={{
@@ -121,7 +121,7 @@ function Navbar() {
                     <Box>
                         <Image src={'/assets/pictures/logo2.png'} width={260} height={100} objectFit={'contain'} />
                     </Box>
-                    <Box sx={{
+                    {/* <Box sx={{
                         display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', mt: 5
                     }} >
                         <Link href={''} >
@@ -168,14 +168,14 @@ function Navbar() {
                                 </Typography>
                             </a>
                         </Link>
-                    </Box>
+                    </Box> */}
                     <Box sx={{ mt: 4 }} >
-                        <Button variant='outlined' sx={{
-                            fontSize: '14px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '16.98px', fontStyle: 'normal', letterSpacing: '2%', backgroundColor: '#2758FF', fontWeight: 500, color: 'white', textTransform: 'capitalize', boxShadow: 'unset', border: '2px solid #2758FF', "&:hover": {
-                                color: 'white', border: '2px solid #2758FF', backgroundColor: '#2758FF'
+                    <Button variant='outlined' sx={{
+                            fontSize: '14px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '16.98px', fontStyle: 'normal', letterSpacing: '2%', fontWeight: 500, color: 'white', textTransform: 'capitalize', boxShadow: 'unset', border: '2px solid #2758FF', "&:hover": {
+                                color: 'white', border: '2px solid #2758FF', backgroundColor: '#2758FF',boxShadow:'0 0 50px #2758FF'
                             }, transition: 'all 0.3s ease', width: '147px', height: '45px', p: 0, borderRadius: '6px'
                         }} >
-                            Lunch app
+                            Launch app
                         </Button>
                     </Box>
                 </Drawer>
