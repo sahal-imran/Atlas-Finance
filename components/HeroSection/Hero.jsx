@@ -40,6 +40,8 @@ function Hero() {
         <>
             <Box id="Hero" sx={{
                 width: '100%', height: {
+                    xxxl: '2000px',
+                    xxl: '1600px',
                     md: '1300px',
                     xs: '100vh'
                 }, backgroundColor: 'black'
@@ -119,15 +121,16 @@ function Hero() {
                     </Box>
                 </Container>
             </Box>
+            <Container maxWidth="lgBig">
             <Box sx={{
                 flexGrow: 1, width: '80%', m: 'auto', display: {
                     md: 'flex',
                     xs: 'none'
-                }, justifyContent: 'center', alignItems: 'center',mt:{
-                    xl:'-300px',
-                    lgBig:'-400px',
-                    lg:"-500px",
-                    md:"-700px"
+                }, justifyContent: 'center', alignItems: 'center', mt: {
+                    xl: '-300px',
+                    lgBig: '-400px',
+                    lg: "-500px",
+                    md: "-700px"
                 }
             }}>
                 <Grid container spacing={2}>
@@ -228,9 +231,9 @@ function Hero() {
                 m: 'auto', display: {
                     md: 'none',
                     xs: 'flex'
-                }, justifyContent: 'center', alignItems: 'center',mt:{
-                    sm:-18,
-                    xs:-24
+                }, justifyContent: 'center', alignItems: 'center', mt: {
+                    sm: -18,
+                    xs: -24
                 }
             }} >
                 <Box sx={{
@@ -324,6 +327,7 @@ function Hero() {
                     </Slider>
                 </Box>
             </Box>
+            </Container>
         </>
     )
 }

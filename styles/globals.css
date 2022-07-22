@@ -23,7 +23,7 @@ a{
 #Hero{
   background-image: url("/assets/pictures/hero bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 @media screen and (max-width:1800px) {
   #Hero{

@@ -22,14 +22,14 @@ function Footer() {
                 }, pb: {
                     md: 4,
                     xs: 4
-                }
-            }} ><Fade bottom cascade >
-
+                },position:"relative"
+            }} >
+                <Fade bottom cascade >
                     <Container maxWidth="lgBig" sx={{
                         m: 'auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexDirection: {
                             md: 'row',
                             xs: 'column'
-                        }
+                        },zIndex:3,position:'relative'
                     }} >
                         <Grid container spacing={1}>
                             <Grid item xs={12} md={4}>
@@ -110,6 +110,16 @@ function Footer() {
                         </Grid>
                     </Container>
                 </Fade>
+                <Box sx={{
+                    position: 'absolute', left: '0px', bottom: '0px', display: {
+                        md: 'block',
+                        xs: 'none'
+                    },zIndex:0
+                }} >
+                    <Fade left cascade >
+                        <Image src={'/assets/pictures/circle-ellipse-3.svg'} width={1200} height={800} objectFit={'cover'} />
+                    </Fade>
+                </Box>
             </Box>
         </>
     )

@@ -57,9 +57,9 @@ function carousel() {
             }} >
                 <Box sx={{
                     width: {
-                        md: '70%',
+                        md: '60%',
                         xs: '90%'
-                    }, display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', mt: 14
+                    },maxWidth:'1140px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', mt: 14
                 }} >
                     <Zoom cascade >
                         <Typography variant='h4' sx={{
