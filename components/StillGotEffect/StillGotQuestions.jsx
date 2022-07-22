@@ -25,7 +25,7 @@ function StillGotQuestion() {
     return (
         <>
             <Box sx={{
-                width: '100%', backgroundColor: 'black', py: 0, position: "relative"
+                width: '100%', backgroundColor: 'black', position: "relative"
             }} >
                 <Container maxWidth="lgBig" sx={{
                     m: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: {
@@ -152,16 +152,17 @@ function StillGotQuestion() {
                         </Zoom>
                     </Box>
                 </Container>
-                {/* <Box sx={{
+                <Box sx={{
                     position: 'absolute', left: '0px', top: '10px', display: {
                         md: 'block',
                         xs: 'none'
-                    }
+                    }, height: '100%', width: '600px'
                 }} >
                     <Fade left cascade >
-                        <Image src={'/assets/pictures/Ellipse left.png'} width={700} height={800} objectFit={'cover'} />
+                        <img src="/assets/pictures/Ellipse left.png" alt="img" style={{ objectFit: 'cover', height: '100%', width: '100%' }} />
+                        {/* <Image src={'/assets/pictures/Ellipse left.png'} width={700} height={800} objectFit={'contain'} /> */}
                     </Fade>
-                </Box> */}
+                </Box>
             </Box>
         </>
     )
