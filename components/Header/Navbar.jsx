@@ -29,9 +29,9 @@ function Navbar() {
                     <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} >
                         <Image src={'/assets/pictures/logo.png'} width={40} height={46} objectFit={'contain'} />
                         <Typography variant='h4' sx={{
-                            fontSize: '20px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '28px', fontStyle: 'normal', letterSpacing: '20%', fontWeight: 700, color: 'white', textTransform: 'uppercase', textDecoration: 'none', "&:hover": {
+                            fontSize: '38px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '28px', fontStyle: 'normal', letterSpacing: '20%', fontWeight: 700, color: 'white', textTransform: 'uppercase', textDecoration: 'none', "&:hover": {
                                 color: '#2758FF',
-                            }, transition: 'all 0.3s ease', ml: 3
+                            }, transition: 'all 0.3s ease', ml: 2
                         }} >
                             Atlas<Box component={'span'} sx={{fontWeight:500}} >Finance</Box>
                         </Typography>

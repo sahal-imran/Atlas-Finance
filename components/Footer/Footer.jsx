@@ -111,13 +111,13 @@ function Footer() {
                     </Container>
                 </Fade>
                 <Box sx={{
-                    position: 'absolute', left: '0px', bottom: '0px', display: {
+                    position: 'absolute', left: '10%', bottom: '0px', display: {
                         md: 'block',
                         xs: 'none'
                     },zIndex:0
                 }} >
                     <Fade left cascade >
-                        <Image src={'/assets/pictures/circle-ellipse-3.svg'} width={1200} height={800} objectFit={'cover'} />
+                        <Image src={'/assets/pictures/circle-ellipse-3.svg'} width={1200} height={400} objectFit={'cover'} />
                     </Fade>
                 </Box>
             </Box>

@@ -152,7 +152,7 @@ function StillGotQuestion() {
                         </Zoom>
                     </Box>
                 </Container>
-                <Box sx={{
+                {/* <Box sx={{
                     position: 'absolute', left: '0px', top: '10px', display: {
                         md: 'block',
                         xs: 'none'
@@ -161,7 +161,7 @@ function StillGotQuestion() {
                     <Fade left cascade >
                         <Image src={'/assets/pictures/Ellipse left.png'} width={700} height={800} objectFit={'cover'} />
                     </Fade>
-                </Box>
+                </Box> */}
             </Box>
         </>
     )
