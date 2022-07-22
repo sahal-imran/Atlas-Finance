@@ -12,12 +12,20 @@ body {
 a{
   text-decoration: none;
 }
+::-webkit-scrollbar {
+  width: 6px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2758FF; 
+  border-radius: 10px;
+}
 #Hero{
   background-image: url("/assets/pictures/hero bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and (max-width:1600px) {
+@media screen and (max-width:1800px) {
   #Hero{
     background-size: contain;
   }

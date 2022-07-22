@@ -123,7 +123,12 @@ function Hero() {
                 flexGrow: 1, width: '80%', m: 'auto', display: {
                     md: 'flex',
                     xs: 'none'
-                }, justifyContent: 'center', alignItems: 'center',mt:-14
+                }, justifyContent: 'center', alignItems: 'center',mt:{
+                    xl:'-300px',
+                    lgBig:'-400px',
+                    lg:"-500px",
+                    md:"-700px"
+                }
             }}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={4}>
@@ -223,7 +228,10 @@ function Hero() {
                 m: 'auto', display: {
                     md: 'none',
                     xs: 'flex'
-                }, justifyContent: 'center', alignItems: 'center',mt:-24
+                }, justifyContent: 'center', alignItems: 'center',mt:{
+                    sm:-18,
+                    xs:-24
+                }
             }} >
                 <Box sx={{
                     width: "100%", position: 'relative'
