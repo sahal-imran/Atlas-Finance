@@ -76,7 +76,7 @@ function Footer() {
                             </Grid>
                             <Grid item xs={12} md={4}>
                                 <Box sx={{
-                                    width: '100%',height:'100%', display: 'flex', justifyContent: 'center', alignItems: {
+                                    width: '100%',height:'100%', display: 'flex', justifyContent: 'end', alignItems: {
                                         md: 'end',
                                         xs: 'center'
                                     }, flexDirection: 'column', mt: {
@@ -100,7 +100,7 @@ function Footer() {
                                     </Box>
                                     <a href="">
                                         <Typography variant='h4' sx={{
-                                            fontSize: '14px', lineHeight: '16.98px', fontStyle: 'normal', fontWeight: 400, color: 'white', textAlign: 'center', letterSpacing: '5%', mt: 2
+                                            fontSize: '14px', lineHeight: '16.98px', fontStyle: 'normal', fontWeight: 400, color: 'white', textAlign: 'center', letterSpacing: '5%', mt: 1.5
                                         }} >
                                             Disclaimer  •  Terms of use
                                         </Typography>
