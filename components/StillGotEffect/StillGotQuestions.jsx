@@ -193,7 +193,7 @@ const faq = [
     },
     {
         id: 5,
-        question: 'How can you sustain such a large APY interest?',
+        question: 'How can you sustain such a high APY payout?',
         answer: 'ATLAS is built upon industry leading Auto-compounding protocols where the growth and sustainability of the ecosystem is hard-coded in its functionality, fees are taken and recycled into the hands of holders rather than given to Centralized exchanges. Our improved protocol has been models against industry competitors and the fixed APY has been proven to be upheld overtime with an increase linear deflationary reduction in tokens and a more flexible APY progression in rebasing.'
     }
 ]

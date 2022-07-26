@@ -22,21 +22,21 @@ function Footer() {
                 }, pb: {
                     md: 4,
                     xs: 4
-                },position:"relative"
+                }, position: "relative"
             }} >
                 <Fade bottom cascade >
                     <Container maxWidth="lgBig" sx={{
                         m: 'auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexDirection: {
                             md: 'row',
                             xs: 'column'
-                        },zIndex:3,position:'relative'
+                        }, zIndex: 3, position: 'relative'
                     }} >
                         <Grid container spacing={1}>
                             <Grid item xs={12} md={4}>
                                 <Box sx={{
                                     width: '100%', display: 'flex', justifyContent: {
-                                        md:'start ',
-                                        xs:'center'
+                                        md: 'start ',
+                                        xs: 'center'
                                     }, alignItems: 'center'
                                 }} >
                                     <Image src={'/assets/pictures/logo2.png'} width={180} height={100} objectFit={'contain'} />
@@ -47,7 +47,7 @@ function Footer() {
                                     display: 'flex', justifyContent: 'center', alignItems: {
                                         md: 'start',
                                         xs: 'center'
-                                    }, flexDirection: 'column',width: '80%',m:'auto',mt: {
+                                    }, flexDirection: 'column', width: '80%', m: 'auto', mt: {
                                         md: 0,
                                         xs: 4
                                     }
@@ -55,7 +55,7 @@ function Footer() {
                                     <Typography variant='h4' sx={{
                                         fontSize: '14px', lineHeight: '16.98px', fontStyle: 'normal', fontWeight: 400, color: 'white', textAlign: 'center', letterSpacing: '5%'
                                     }} >
-                                        Get on the List
+                                        Get the latest updates!
                                     </Typography>
                                     <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '36px', mt: 2 }} >
                                         <Box sx={{ width: '80%', height: '100%' }} >
@@ -63,7 +63,11 @@ function Footer() {
                                                 outline: 'none', border: '1px solid #2758FF', fontSize: '16px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '24px', fontStyle: 'normal', color: 'white', background: 'transparent', width: '100%', height: '100%', padding: '0px 20px'
                                             }} placeholder='Email' />
                                         </Box>
-                                        <Box sx={{ width: '20%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', background: '#2758FF', cursor: 'pointer' }} >
+                                        <Box sx={{
+                                            width: '20%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', background: '#2758FF', cursor: 'pointer', transition: 'all 0.3s ease', "&:hover": {
+                                                boxShadow: '0 0 50px #2758FF'
+                                            }
+                                        }} >
                                             <ArrowRightAltIcon sx={{ color: 'white' }} />
                                         </Box>
                                     </Box>
@@ -76,7 +80,7 @@ function Footer() {
                             </Grid>
                             <Grid item xs={12} md={4}>
                                 <Box sx={{
-                                    width: '100%',height:'100%', display: 'flex', justifyContent: 'end', alignItems: {
+                                    width: '100%', height: '100%', display: 'flex', justifyContent: 'end', alignItems: {
                                         md: 'end',
                                         xs: 'center'
                                     }, flexDirection: 'column', mt: {
@@ -85,18 +89,42 @@ function Footer() {
                                     }
                                 }} >
                                     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }} >
-                                        <a href="" style={{ marginRight: '12px' }} >
-                                            <Image src={'/assets/pictures/fb.svg'} width={24} height={24} objectFit={'contain'} />
-                                        </a>
-                                        <a href="" style={{ marginRight: '12px' }} >
-                                            <Image src={'/assets/pictures/insta.svg'} width={24} height={24} objectFit={'contain'} />
-                                        </a>
-                                        <a href="" style={{ marginRight: '12px' }} >
-                                            <Image src={'/assets/pictures/twitter.svg'} width={24} height={24} objectFit={'contain'} />
-                                        </a>
-                                        <a href="" style={{ marginRight: '12px' }} >
-                                            <Image src={'/assets/pictures/telegram.svg'} width={24} height={24} objectFit={'contain'} />
-                                        </a>
+                                        <Box sx={{
+                                            transition: 'all 0.3s ease', "&:hover": {
+                                                boxShadow: '0 0 50px #2758FF'
+                                            }
+                                        }} >
+                                            <a className='SocialLink' href="" style={{ marginRight: '12px' }} >
+                                                <Image src={'/assets/pictures/fb.svg'} width={24} height={24} objectFit={'contain'} />
+                                            </a>
+                                        </Box>
+                                        <Box sx={{
+                                            transition: 'all 0.3s ease', "&:hover": {
+                                                boxShadow: '0 0 50px #2758FF'
+                                            }
+                                        }} >
+                                            <a className='SocialLink' href="" style={{ marginRight: '12px' }} >
+                                                <Image src={'/assets/pictures/insta.svg'} width={24} height={24} objectFit={'contain'} />
+                                            </a>
+                                        </Box>
+                                        <Box sx={{
+                                            transition: 'all 0.3s ease', "&:hover": {
+                                                boxShadow: '0 0 50px #2758FF'
+                                            }
+                                        }} >
+                                            <a className='SocialLink' href="" style={{ marginRight: '12px' }} >
+                                                <Image src={'/assets/pictures/twitter.svg'} width={24} height={24} objectFit={'contain'} />
+                                            </a>
+                                        </Box>
+                                        <Box sx={{
+                                            transition: 'all 0.3s ease', "&:hover": {
+                                                boxShadow: '0 0 50px #2758FF'
+                                            }
+                                        }} >
+                                            <a className='SocialLink' href="" style={{ marginRight: '12px' }} >
+                                                <Image src={'/assets/pictures/telegram.svg'} width={24} height={24} objectFit={'contain'} />
+                                            </a>
+                                        </Box>
                                     </Box>
                                     <a href="">
                                         <Typography variant='h4' sx={{
@@ -114,7 +142,7 @@ function Footer() {
                     position: 'absolute', left: '10%', bottom: '0px', display: {
                         md: 'block',
                         xs: 'none'
-                    },zIndex:0
+                    }, zIndex: 0
                 }} >
                     <Fade left cascade >
                         <Image src={'/assets/pictures/circle-ellipse-3.svg'} width={1200} height={400} objectFit={'cover'} />

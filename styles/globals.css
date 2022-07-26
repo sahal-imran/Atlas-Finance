@@ -25,6 +25,10 @@ a{
   background-repeat: no-repeat;
   background-size: contain;
 }
+.SocialLink:hover{
+  box-shadow: 0 0 50px #2758FF;
+  transition: all 0.3s ease;
+}
 @media screen and (max-width:1800px) {
   #Hero{
     background-size: contain;
