@@ -27,7 +27,22 @@ function Navbar() {
                     }, display: 'flex', justifyContent: 'space-between', alignItems: 'center',
                 }} >
                     <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} >
-                        <Image src={'/assets/pictures/logo2.png'} width={180} height={100} objectFit={'contain'} />
+                        <Box sx={{
+                            display: {
+                                md: 'block',
+                                xs: 'none'
+                            }
+                        }} >
+                            <Image src={'/assets/pictures/logo2.png'} width={180} height={100} objectFit={'contain'} />
+                        </Box>
+                        <Box sx={{
+                            display: {
+                                md: 'none',
+                                xs: 'block'
+                            }
+                        }} >
+                            <Image src={'/assets/pictures/logo2.png'} width={100} height={60} objectFit={'contain'} />
+                        </Box>
                         {/* <Image src={'/assets/pictures/logo.png'} width={40} height={46} objectFit={'contain'} />
                         <Typography variant='h4' sx={{
                             fontSize: '38px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '28px', fontStyle: 'normal', letterSpacing: '20%', fontWeight: 700, color: 'white', textTransform: 'uppercase', textDecoration: 'none', "&:hover": {
