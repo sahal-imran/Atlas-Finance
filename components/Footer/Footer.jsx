@@ -74,7 +74,7 @@ function Footer() {
                                     <Typography variant='h4' sx={{
                                         fontSize: '14px', lineHeight: '16.98px', fontFamily: ['gilroy', 'Open Sans'], fontStyle: 'normal', fontWeight: 400, color: 'white', textAlign: 'center', letterSpacing: '5%', mt: 2
                                     }} >
-                                        © 2022 ATLAS Protocol, All rights reserved.
+                                        © 2022 ATLAS Finance, All rights reserved.
                                     </Typography>
                                 </Box>
                             </Grid>
@@ -126,13 +126,13 @@ function Footer() {
                                             </a>
                                         </Box>
                                     </Box>
-                                    <a href="">
+                                    {/* <a href="">
                                         <Typography variant='h4' sx={{
                                             fontSize: '14px', lineHeight: '16.98px', fontStyle: 'normal', fontWeight: 400, color: 'white', textAlign: 'center', letterSpacing: '5%', mt: 1.5
                                         }} >
                                             Disclaimer  •  Terms of use
                                         </Typography>
-                                    </a>
+                                    </a> */}
                                 </Box>
                             </Grid>
                         </Grid>

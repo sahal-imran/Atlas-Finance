@@ -181,7 +181,7 @@ function Hero() {
                                             xs: 'center'
                                         }, mr: 2
                                     }} >
-                                        No gas for staking or claiming tokens! 
+                                        No gas for staking or claiming tokens!
                                     </Typography>
                                     {/* <Typography variant='h4' sx={{
                                         fontSize: '16px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '19.41pxpx', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', letterSpacing: '5%', textAlign: {
@@ -199,7 +199,7 @@ function Hero() {
                                 <Box sx={{
                                     height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px', p: 4, boxShadow: '0px 4px 250px #2758FF', backdropFilter: 'blur(25px)'
                                 }} >
-                                   <Typography variant='h4' sx={{
+                                    <Typography variant='h4' sx={{
                                         fontSize: {
                                             md: '20px',
                                             xs: '36px'
@@ -237,12 +237,12 @@ function Hero() {
                     }
                 }} >
                     <Box sx={{
-                        width: "100%", position: 'relative'
+                        width: "100vw", position: 'relative'
                     }} >
                         <Slider {...settings}>
-                            <Box sx={{ px: 1 }} >
+                            <Box sx={{ py: 4.5, px: 2 }} >
                                 <Box sx={{
-                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px', border: '2px solid #2758FF', p: 4
+                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px', p: 4, boxShadow: '0px 0px 50px #2758FF'
                                 }} >
                                     <Typography variant='h4' sx={{
                                         fontSize: '18px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '24px', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
@@ -262,9 +262,9 @@ function Hero() {
                                 </Typography> */}
                                 </Box>
                             </Box>
-                            <Box sx={{ px: 1 }} >
+                            <Box sx={{ py: 4.5, px: 2 }} >
                                 <Box sx={{
-                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px', border: '2px solid #2758FF', p: 1
+                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px', p: 4, boxShadow: '0px 0px 50px #2758FF'
                                 }} >
                                     <Typography variant='h4' sx={{
                                         fontSize: '18px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '24px', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
@@ -272,7 +272,7 @@ function Hero() {
                                             xs: 'center'
                                         }, mr: 2
                                     }} >
-                                        No gas for staking or claiming tokens! 
+                                        No gas for staking or claiming tokens!
                                     </Typography>
                                     {/* <Typography variant='h4' sx={{
                                         fontSize: '16px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '19.41pxpx', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', letterSpacing: '5%', textAlign: {
@@ -284,9 +284,9 @@ function Hero() {
                                     </Typography> */}
                                 </Box>
                             </Box>
-                            <Box sx={{ px: 1 }} >
+                            <Box sx={{ py: 4.5, px: 2 }} >
                                 <Box sx={{
-                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px', border: '2px solid #2758FF', p: 4
+                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px',p: 4, boxShadow: '0px 0px 50px #2758FF'
                                 }} >
                                     <Typography variant='h4' sx={{
                                         fontSize: '18px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '24px', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
