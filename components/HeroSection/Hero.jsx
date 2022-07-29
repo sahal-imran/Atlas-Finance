@@ -137,90 +137,27 @@ function Hero() {
                         <Grid item xs={12} md={4}>
                             <Fade top cascade>
                                 <Box sx={{
-                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px', p: 4, boxShadow: '0px 4px 250px #2758FF', backdropFilter: 'blur(25px)'
+                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'black', borderRadius: '16px', p: 4, boxShadow: '0px 4px 250px #2758FF', backdropFilter: 'blur(25px)',position:'relative'
                                 }} >
-                                    <Typography variant='h4' sx={{
-                                        fontSize: {
-                                            md: '20px',
-                                            xs: '36px'
-                                        }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
-                                            md: '28px',
-                                            xs: '43.67px'
-                                        }, fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mr: 2
-                                    }} >
-                                        Token rewards are sent directly to your wallet every single block.
-                                    </Typography>
-                                    {/* <Typography variant='h4' sx={{
-                                        fontSize: '16px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '19.41pxpx', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', letterSpacing: '5%', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mt: 2
-                                    }} >
-                                        Circulating Supply
-                                    </Typography> */}
+                                    <Image src={'/assets/pictures/1.jpg'} layout={'fill'} objectFit="contain" />
                                 </Box>
                             </Fade>
                         </Grid>
                         <Grid item xs={12} md={4}>
                             <Fade bottom cascade>
                                 <Box sx={{
-                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px', p: 4, boxShadow: '0px 4px 250px #2758FF', backdropFilter: 'blur(25px)'
+                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'black', borderRadius: '16px', p: 4, boxShadow: '0px 4px 250px #2758FF', backdropFilter: 'blur(25px)',position:'relative'
                                 }} >
-                                    <Typography variant='h4' sx={{
-                                        fontSize: {
-                                            md: '20px',
-                                            xs: '36px'
-                                        }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
-                                            md: '28px',
-                                            xs: '43.67px'
-                                        }, fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mr: 2
-                                    }} >
-                                        No gas for staking or claiming tokens!
-                                    </Typography>
-                                    {/* <Typography variant='h4' sx={{
-                                        fontSize: '16px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '19.41pxpx', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', letterSpacing: '5%', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mt: 2
-                                    }} >
-                                        Holders
-                                    </Typography> */}
+                                    <Image src={'/assets/pictures/2.jpg'} layout={'fill'} objectFit="contain" />
                                 </Box>
                             </Fade>
                         </Grid>
                         <Grid item xs={12} md={4}>
                             <Fade top cascade>
                                 <Box sx={{
-                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px', p: 4, boxShadow: '0px 4px 250px #2758FF', backdropFilter: 'blur(25px)'
+                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'black', borderRadius: '16px', p: 4, boxShadow: '0px 4px 250px #2758FF', backdropFilter: 'blur(25px)',position:'relative'
                                 }} >
-                                    <Typography variant='h4' sx={{
-                                        fontSize: {
-                                            md: '20px',
-                                            xs: '36px'
-                                        }, fontFamily: ['gilroy', 'Open Sans'], lineHeight: {
-                                            md: '28px',
-                                            xs: '43.67px'
-                                        }, fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mr: 2
-                                    }} >
-                                        Just watch as your $ATLAS balance automatically increases every block!
-                                    </Typography>
-                                    {/* <Typography variant='h4' sx={{
-                                        fontSize: '16px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '19.41pxpx', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', letterSpacing: '5%', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mt: 2
-                                    }} >
-                                        ATLAS Price
-                                    </Typography> */}
+                                    <Image src={'/assets/pictures/3.jpg'} layout={'fill'} objectFit="contain" />
                                 </Box>
                             </Fade>
                         </Grid>
@@ -242,38 +179,16 @@ function Hero() {
                         <Slider {...settings}>
                             <Box sx={{ py: 4.5, px: 2 }} >
                                 <Box sx={{
-                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px', p: 4, boxShadow: '0px 0px 50px #2758FF'
+                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'black', borderRadius: '16px', p: 4, boxShadow: '0px 0px 50px #2758FF',position:'relative'
                                 }} >
-                                    <Typography variant='h4' sx={{
-                                        fontSize: '18px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '24px', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mr: 2
-                                    }} >
-                                        Token rewards are sent directly to your wallet every single block.
-                                    </Typography>
-                                    {/* <Typography variant='h4' sx={{
-                                    fontSize: '16px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '19.41pxpx', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', letterSpacing: '5%', textAlign: {
-                                        md: 'start',
-                                        xs: 'center'
-                                    }, mt: 2
-                                }} >
-                                    Circulating Supply
-                                </Typography> */}
+                                    <Image src={'/assets/pictures/1.jpg'} layout={'fill'} objectFit="contain" />
                                 </Box>
                             </Box>
                             <Box sx={{ py: 4.5, px: 2 }} >
                                 <Box sx={{
-                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px', p: 4, boxShadow: '0px 0px 50px #2758FF'
+                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'black', borderRadius: '16px', p: 4, boxShadow: '0px 0px 50px #2758FF',position:'relative'
                                 }} >
-                                    <Typography variant='h4' sx={{
-                                        fontSize: '18px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '24px', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mr: 2
-                                    }} >
-                                        No gas for staking or claiming tokens!
-                                    </Typography>
+                                    <Image src={'/assets/pictures/2.jpg'} layout={'fill'} objectFit="contain" />
                                     {/* <Typography variant='h4' sx={{
                                         fontSize: '16px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '19.41pxpx', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', letterSpacing: '5%', textAlign: {
                                             md: 'start',
@@ -286,24 +201,9 @@ function Hero() {
                             </Box>
                             <Box sx={{ py: 4.5, px: 2 }} >
                                 <Box sx={{
-                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'rgba(8, 21, 37, 0.25)', borderRadius: '16px',p: 4, boxShadow: '0px 0px 50px #2758FF'
+                                    height: '174px', display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', background: 'black', borderRadius: '16px',p: 4, boxShadow: '0px 0px 50px #2758FF',position:'relative'
                                 }} >
-                                    <Typography variant='h4' sx={{
-                                        fontSize: '18px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '24px', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mr: 2
-                                    }} >
-                                        Token rewards are sent directly to your wallet every single block.
-                                    </Typography>
-                                    {/* <Typography variant='h4' sx={{
-                                        fontSize: '16px', fontFamily: ['gilroy', 'Open Sans'], lineHeight: '19.41pxpx', fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', letterSpacing: '5%', textAlign: {
-                                            md: 'start',
-                                            xs: 'center'
-                                        }, mt: 2
-                                    }} >
-                                        ATLAS Price
-                                    </Typography> */}
+                                    <Image src={'/assets/pictures/3.jpg'} layout={'fill'} objectFit="contain" />
                                 </Box>
                             </Box>
                         </Slider>
