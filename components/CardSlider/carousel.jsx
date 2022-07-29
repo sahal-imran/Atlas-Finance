@@ -94,7 +94,7 @@ function carousel() {
                                 xs: '58.22px'
                             }, fontStyle: 'normal', fontWeight: 500, color: '#FFFFFF', textAlign: 'center', mt: 3
                         }} >
-                            <CountUp end={102483.58} decimals={2} />%
+                            <CountUp end={132898.78} decimals={2} />%
                         </Typography>
                         <Typography variant='h4' sx={{
                             fontSize: {

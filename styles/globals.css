@@ -29,6 +29,15 @@ a{
   box-shadow: 0 0 50px #2758FF;
   transition: all 0.3s ease;
 }
+.slick-dots li button:before{
+  color: #2758FF !important;
+  opacity: 0.8 !important;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: #2758FF !important;
+  font-size: 12px;
+}
 @media screen and (max-width:1800px) {
   #Hero{
     background-size: contain;

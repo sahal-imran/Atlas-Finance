@@ -233,7 +233,7 @@ function Hero() {
                         xs: 'flex'
                     }, justifyContent: 'center', alignItems: 'center', mt: {
                         sm: -18,
-                        xs: -24
+                        xs: -16
                     }
                 }} >
                     <Box sx={{
